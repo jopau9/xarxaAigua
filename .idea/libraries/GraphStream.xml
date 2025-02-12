@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="GraphStream">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/GraphStream" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/GraphStream" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib/GraphStream" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/GraphStream" recursive="false" type="SOURCES" />
+  </library>
+</component>

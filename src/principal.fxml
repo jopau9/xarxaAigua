@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorPrincipal">
+   <children>
+      <Pane fx:id="espaiGrafic" layoutX="125.0" prefHeight="400" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="0.0" />
+      <ScrollPane prefHeight="400.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <Pane prefHeight="470.0" prefWidth="140.0">
+               <children>
+                  <Button fx:id="afegirO" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#afegirOrigen" prefHeight="26.0" prefWidth="110.0" text="Afegir origen" />
+                  <Button layoutX="1.0" layoutY="105.0" mnemonicParsing="false" onAction="#obrirAixeta" prefHeight="26.0" prefWidth="110.0" text="Obrir aixeta" />
+                  <Button layoutX="1.0" layoutY="131.0" mnemonicParsing="false" onAction="#tancarAixeta" prefHeight="26.0" prefWidth="110.0" text="Tancar aixeta" />
+                  <Button fx:id="afegirC" layoutX="1.0" layoutY="27.0" mnemonicParsing="false" onAction="#afegirConnexio" prefHeight="26.0" prefWidth="110.0" text="Afegir connexió" />
+                  <Button fx:id="afegirT" layoutX="1.0" layoutY="53.0" mnemonicParsing="false" onAction="#afegirTerminal" prefHeight="26.0" prefWidth="110.0" text="Afegir terminal" />
+                  <Button layoutX="1.0" layoutY="79.0" mnemonicParsing="false" onAction="#Bconnectar" prefHeight="26.0" prefWidth="110.0" text="Connectar" />
+                  <Button layoutX="1.0" layoutY="157.0" mnemonicParsing="false" onAction="#abonar" prefHeight="26.0" prefWidth="110.0" text="Abonar" />
+                  <Button layoutX="1.0" layoutY="183.0" mnemonicParsing="false" onAction="#establirCabal" prefHeight="26.0" prefWidth="110.0" text="Establir cabal O" />
+                  <Button layoutX="1.0" layoutY="209.0" mnemonicParsing="false" onAction="#establirDemanda" prefHeight="26.0" prefWidth="110.0" text="Establir demanda" />
+                  <Button layoutX="1.0" layoutY="235.0" mnemonicParsing="false" onAction="#cicles" prefHeight="26.0" prefWidth="110.0" text="Té cicles?" />
+                  <Button layoutX="1.0" layoutY="261.0" mnemonicParsing="false" onAction="#arbres" prefHeight="26.0" prefWidth="110.0" text="És arbre?" />
+                  <Button layoutX="1.0" layoutY="287.0" mnemonicParsing="false" onAction="#cabalMin" prefHeight="26.0" prefWidth="110.0" text="Cabal mínim O" />
+                  <Button layoutX="1.0" layoutY="313.0" mnemonicParsing="false" onAction="#excesCabal" prefHeight="26.0" prefWidth="110.0" text="Excés cabal" />
+                  <Button layoutX="1.0" layoutY="339.0" mnemonicParsing="false" onAction="#fluxMaxim" prefHeight="26.0" prefWidth="110.0" text="Flux màxim xarxa" />
+                  <Button layoutX="1.0" layoutY="365.0" mnemonicParsing="false" onAction="#proximitat" prefHeight="26.0" prefWidth="110.0" text="Proximitat" />
+                  <Button layoutX="1.0" layoutY="391.0" mnemonicParsing="false" onAction="#cabalAbonat" prefHeight="26.0" prefWidth="110.0" text="Cabal abonat" />
+                  <Button layoutX="1.0" layoutY="417.0" mnemonicParsing="false" onAction="#situacio" prefHeight="26.0" prefWidth="110.0" text="Situació" />
+                  <Button layoutX="1.0" layoutY="443.0" mnemonicParsing="false" onAction="#dibuixarAixeta" prefHeight="26.0" prefWidth="110.0" text="Dibuixar" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="730.0" layoutY="319.0" mnemonicParsing="false" onAction="#desfer" prefHeight="27.0" prefWidth="57.0" text="Desfer" AnchorPane.bottomAnchor="53.666666666666686" AnchorPane.rightAnchor="12.666666666666629">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu" layoutX="697.0" layoutY="356.0" mnemonicParsing="false" onAction="#tornarMenu" text="Tornar menú" AnchorPane.bottomAnchor="16.666666666666668" AnchorPane.rightAnchor="11.666666666666671">
+         <font>
+            <Font name="Microsoft PhagsPa" size="13.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="600.0" prefHeight="313.0" prefWidth="337.0" AnchorPane.bottomAnchor="87.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <TextArea fx:id="pantallaSortida" prefHeight="1000.0" prefWidth="400.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

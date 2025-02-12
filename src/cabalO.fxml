@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorCabalOrigen">
+    <children>
+        <Button defaultButton="true" layoutX="358.0" layoutY="161.0" mnemonicParsing="false" onAction="#establir" text="Establir cabal" AnchorPane.bottomAnchor="13.666666666666668" AnchorPane.rightAnchor="91.33333333333334">
+            <font>
+                <Font name="Microsoft JhengHei" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancelar" layoutX="418.0" layoutY="161.0" mnemonicParsing="false" onAction="#cancelarOperacio" text="Cancel·lar" AnchorPane.bottomAnchor="14.00000000000001" AnchorPane.rightAnchor="11.333333333333329">
+            <font>
+                <Font name="Microsoft JhengHei" size="12.0" />
+            </font>
+        </Button>
+        <Text layoutX="28.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Origen:" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="62.0" />
+        <TextField fx:id="cabalT" layoutX="113.33333333333333" layoutY="100.0" prefHeight="25.0" prefWidth="319.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="100.0" />
+        <Text layoutX="28.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cabal (l/s):" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="105.0" />
+        <ChoiceBox fx:id="origenT" layoutX="114.0" layoutY="57.0" prefHeight="25.0" prefWidth="319.0" />
+    </children>
+</AnchorPane>
